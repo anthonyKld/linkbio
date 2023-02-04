@@ -230,4 +230,15 @@ footer {
     body {
         width: 80%;
     }
+
+    .cabecelho {
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dados-pessoais {
+        margin: 15px 0 0 0;
+    }
 }
