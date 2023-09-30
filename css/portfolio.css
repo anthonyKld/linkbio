@@ -1,0 +1,62 @@
+/*
+    font-family: 'Roboto Mono', monospace;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --verde: #00FF5F;
+}
+
+body {
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    flex: 1;
+    min-width: calc(50% - 10px); /* Duas colunas para dispositivos móveis e tablets */
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.caixa-botoes a {
+    width: 200px;
+    margin: 30px auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.caixa-botoes span {
+    font-size: 1.2em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 50px 0 30px 0;
+    font-weight: 700;
+}
+
+.item img {
+    width: 80%;
+}
+
+@media (max-width: 767px) {
+    /* Uma coluna para celulares */
+    .item {
+        min-width: 100%;
+    }
+
+    .item img {
+        width: 90%;
+    }
+}
